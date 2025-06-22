@@ -1,1 +1,1 @@
-# Thesis- Sign Language Video Segmentation using Temporal Boundary Identification
+# Sign Language Video Segmentation using Temporal Boundary Identification
