@@ -4,7 +4,6 @@ import math
 from typing import List
 import torch
 
-
 def frame_f1(probs: torch.Tensor, gold: torch.Tensor, **kwargs) -> float:
   """
   probs: [sequence_length x number_of_classes(3)]
