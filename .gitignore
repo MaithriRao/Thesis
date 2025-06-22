@@ -2,3 +2,4 @@ __pycache__/
 /usrun.sh
 youtube_asl_video_ids.txt
 yt-dlp
+*.onnx
