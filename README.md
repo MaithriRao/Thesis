@@ -12,6 +12,19 @@ Addressing the persistent challenge of demanding and time-consuming temporal ann
 For BOBSL, videos are at 25 fps and pre-split into 40 training, 10 validation, and 10 test videos. Most clips are 30-60 minutes long. YouTube-ASL videos range from 40 seconds to 40 minutes, with data split into 70% training, 20% validation, and 10% testing.
 
 ### Model Architecture
+
+<img src="https://github.com/user-attachments/assets/8b92e6bd-6172-49e2-a57c-b0974b2b7353" alt="attention_1" width="500">
+
+Encoder: BiLSTM encoder (2 layers, 128 hidden units,
+dropout 0.2) to encode 375x2048 input sequences
+from ResNet-101. 
+
+Dcoder: (2 LSTM layers, 128 hidden units, dropout 0.1) uses an attention
+mechanism to compute a weighted sum of the encoder outputs, forming a context vector (256 dimensions) at each decoding step. This context vector,
+combined with the previous output embedding (128
+dimensions), is used to generate logits via a fully
+connected layer. A softmax operation is used to
+normalize these logits into a probability distribution over the output segments
 ### Training
 ### Inference
 
