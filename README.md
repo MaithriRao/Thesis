@@ -24,7 +24,7 @@ mechanism to compute a weighted sum of the encoder outputs, forming a context ve
 combined with the previous output embedding (128
 dimensions), is used to generate logits via a fully
 connected layer. A softmax operation is used to
-normalize these logits into a probability distribution over the output segments
+normalize these logits into a probability distribution over the output segments.
 ### Training
 ### Inference
 
