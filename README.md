@@ -15,6 +15,7 @@ For BOBSL, videos are at 25 fps and pre-split into 40 training, 10 validation, a
 ### Model Architecture
 
 <img src="https://github.com/user-attachments/assets/8b92e6bd-6172-49e2-a57c-b0974b2b7353" alt="attention_1" width="500">
+![Screenshot From 2025-07-01 00-04-12](https://github.com/user-attachments/assets/815b457e-d02e-438e-a2f2-7be698fd2b7e)
 
 Encoder: BiLSTM encoder (2 layers, 128 hidden units,
 dropout 0.2) to encode 375x2048 input sequences
@@ -28,6 +29,11 @@ connected layer. A softmax operation is used to
 normalize these logits into a probability distribution over the output segments.
 ### Training
 ### Inference
+
+![Screenshot From 2025-07-01 00-04-12](https://github.com/user-attachments/assets/c0e198e6-0df0-4b0f-b180-074a516d25e5)
+![Screenshot From 2025-07-01 00-05-22](https://github.com/user-attachments/assets/58ce94df-de3e-4f66-9603-824f1916670b)
+
+
 * Successful cases:
 <img src="https://github.com/user-attachments/assets/8c63f5f2-f19e-41a6-815e-f5164aaab091" alt="b_i_o(bobsl)" width="800">
 
