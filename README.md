@@ -46,6 +46,17 @@ normalize these logits into a probability distribution over the output segments.
 
 
 * Successful cases:
+  
 <img src="https://github.com/user-attachments/assets/8c63f5f2-f19e-41a6-815e-f5164aaab091" alt="b_i_o(bobsl)" width="800">
 
-**Figure 1: Example of Subtitle-level Segmentation**
+<img src="https://github.com/user-attachments/assets/bba8182f-8438-45b0-a70f-f513e60f54af" alt="sample" width="800">
+
+**Figure 1: Subtitle-level segmentation using BIO tags (B: green, I: light blue, O: white). Our attention-based model predicts these tags based on probabilities, delineating subtitle boundaries.**
+
+* Failure cases:
+
+<img src="https://github.com/user-attachments/assets/07277311-76f3-42ff-9146-a6ef27511c99" alt="asl_g+i" width="800">
+
+<img src="https://github.com/user-attachments/assets/331180be-14d0-4ba7-a760-4c2783dd872f" alt="wrong_asl" width="800">
+
+
