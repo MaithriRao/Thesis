@@ -1,6 +1,5 @@
 # Sign Language Video Segmentation using Temporal Boundary Identification
 
-https://github.com/user-attachments/assets/d3d2e8a4-1edd-407b-86f2-957551614aa5
 
 ## Objective
 Addressing the persistent challenge of demanding and time-consuming temporal annotation in Sign Language (SL) videos, this project introduces a subtitle-level segmentation approach utilizing Beginning-Inside-Outside (BIO) tagging for precise boundary identification. 
@@ -16,7 +15,6 @@ For BOBSL, videos are at 25 fps and pre-split into 40 training, 10 validation, a
 ### Model Architecture
 
 <img src="https://github.com/user-attachments/assets/8b92e6bd-6172-49e2-a57c-b0974b2b7353" alt="attention_1" width="500">
-![Screenshot From 2025-07-01 00-04-12](https://github.com/user-attachments/assets/815b457e-d02e-438e-a2f2-7be698fd2b7e)
 
 Encoder: BiLSTM encoder (2 layers, 128 hidden units,
 dropout 0.2) to encode 375x2048 input sequences
@@ -31,6 +29,9 @@ normalize these logits into a probability distribution over the output segments.
 ### Training
 ### Inference
 
+![Screenshot From 2025-07-01 00-04-12](https://github.com/user-attachments/assets/c0e198e6-0df0-4b0f-b180-074a516d25e5)
+<!-- ![Screenshot From 2025-07-01 00-05-22](https://github.com/user-attachments/assets/58ce94df-de3e-4f66-9603-824f1916670b) -->
+
 ### Results
 
 | Model    | Dataset  |   F1     |    IoU   |     %    | # Params | Time     |
@@ -42,9 +43,6 @@ normalize these logits into a probability distribution over the output segments.
 |----------|----------|----------|----------|----------|----------|----------|
 |Seq2Seq Encoder-Decoder w/o attention |   BOBSL<br>YouTube-ASL | 0.58 <br> 0.55 | 0.70 <br>0.58|2.16 <br> 0.87|3.1M <br>3.1M|~15h<br>~19h|
 |Seq2Seq Encoder-Decoder w/ attention| BOBSL<br>YouTube-ASL| **0.60**<br> **0.60**| **0.74** <br> **0.62**| **1.03**<br>**0.95** | 7.8M <br> 3.0M |~ 2d <br>~ 2d|
-
-![Screenshot From 2025-07-01 00-04-12](https://github.com/user-attachments/assets/c0e198e6-0df0-4b0f-b180-074a516d25e5)
-![Screenshot From 2025-07-01 00-05-22](https://github.com/user-attachments/assets/58ce94df-de3e-4f66-9603-824f1916670b)
 
 
 * Successful cases:
