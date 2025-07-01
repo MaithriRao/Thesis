@@ -36,12 +36,12 @@ normalize these logits into a probability distribution over the output segments.
 | Model    | Dataset  |   F1     |    IoU   |     %    | # Params | Time     |
 |----------|----------|----------|----------|----------|----------|----------|
 |Sequence Encoder |   BOBSL<br>YouTube-ASL | 0.58 <br> 0.56 | 0.60 <br>0.58|2.50 <br> 0.70|1.38M <br>1.18M|~14h<br>~15h|
-|Autoregressive Encoder| BOBSL<br>YouTube-ASL| 0.55<br> 0.47| 0.51 <br> 0.50|  1.74<br>0.55 | 1.42M <br> 1.26M |~ 1d <br>~ 1d 
+|Autoregressive Encoder| BOBSL<br>YouTube-ASL| 0.55<br> 0.47| 0.51 <br> 0.50|  1.74<br>0.55 | 1.42M <br> 1.26M |~ 1d <br>~ 1d|
 
 | Model    | Dataset  |   F1     |    IoU   |     %    | # Params | Time     |
 |----------|----------|----------|----------|----------|----------|----------|
 |Seq2Seq Encoder-Decoder w/o attention |   BOBSL<br>YouTube-ASL | 0.58 <br> 0.55 | 0.70 <br>0.58|2.16 <br> 0.87|3.1M <br>3.1M|~15h<br>~19h|
-|Seq2Seq Encoder-Decoder w/ attention| BOBSL<br>YouTube-ASL| **0.60**<br> 0.60| 0.51 <br> 0.50|  1.74<br>0.55 | 1.42M <br> 1.26M |~ 1d <br>~ 1d 
+|Seq2Seq Encoder-Decoder w/ attention| BOBSL<br>YouTube-ASL| **0.60**<br> **0.60**| **0.74** <br> **0.62**| **1.03**<br>**0.95** | 7.8M <br> 3.0M |~ 2d <br>~ 2d|
 
 ![Screenshot From 2025-07-01 00-04-12](https://github.com/user-attachments/assets/c0e198e6-0df0-4b0f-b180-074a516d25e5)
 ![Screenshot From 2025-07-01 00-05-22](https://github.com/user-attachments/assets/58ce94df-de3e-4f66-9603-824f1916670b)
