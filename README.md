@@ -1,5 +1,7 @@
 # Sign Language Video Segmentation using Temporal Boundary Identification
-https://github.com/user-attachments/assets/d3d2e8a4-1edd-407b-86f2-957551614aa5
+
+https://github.com/user-attachments/assets/5d79764d-cb28-490e-875e-3d8ef9e7943b
+
 
 ## Objective
 Addressing the persistent challenge of demanding and time-consuming temporal annotation in Sign Language (SL) videos, this project introduces a subtitle-level segmentation approach utilizing Beginning-Inside-Outside (BIO) tagging for precise boundary identification. 
