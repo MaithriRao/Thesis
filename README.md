@@ -9,7 +9,7 @@ Addressing the persistent challenge of demanding and time-consuming temporal ann
 ## Implementation
 ### Datasets
 * BOBSL:The aligned subtitle segments and pre-extracted optical flow features, is available for direct download at https://www.robots.ox.ac.uk/~vgg/data/bobsl/
-* YouTube-ASL: Download raw videos and extract optical flow features. Code and instructions are in our related repository: https://github.com/google-research/google-research/blob/master/youtube_asl/README.md
+* YouTube-ASL: Download raw videos (step2) and extract optical flow features (Raft_OF_estimation). Code and instructions are in our related repository: https://github.com/google-research/google-research/blob/master/youtube_asl/README.md
 
 For BOBSL, videos are at 25 fps and pre-split into 40 training, 10 validation, and 10 test videos. Most clips are 30-60 minutes long. YouTube-ASL videos range from 40 seconds to 40 minutes, with data split into 70% training, 20% validation, and 10% testing.
 
