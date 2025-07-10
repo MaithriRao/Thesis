@@ -18,7 +18,18 @@ For BOBSL, videos are at 25 fps and pre-split into 40 training, 10 validation, a
 
 <img src="https://github.com/user-attachments/assets/8b92e6bd-6172-49e2-a57c-b0974b2b7353" alt="attention_1" width="500">
 
-
+** Proposed Method
+* Input Features:
+Input: Optical Flow (RAFT)
+ResNet-101 Feature Extraction
+* Segmentation Model:
+Core: Seq2Seq Architecture with & without Attention (Figure 1)
+Encoders: BiLSTM & Autoregressive (Baselines)
+Output: Beginning-Inside-Outside (BIO) for Boundaries as shown in Figure 3.
+* Subtitle Temporal Resolution:
+Converts predictions to time-stamped SubRip Subtitle (.srt) Files
+Uses Beam Search Inference
+<!--
 Encoder: BiLSTM encoder (2 layers, 128 hidden units,
 dropout 0.2) to encode 375x2048 input sequences
 from ResNet-101. 
@@ -28,8 +39,9 @@ mechanism to compute a weighted sum of the encoder outputs, forming a context ve
 combined with the previous output embedding (128
 dimensions), is used to generate logits via a fully
 connected layer. A softmax operation is used to
-normalize these logits into a probability distribution over the output segments.
+normalize these logits into a probability distribution over the output segments. -->
 ### Training
+
 ### Inference
 Algorithm to map model probabilities to subtitle boundaries.
 
