@@ -1,9 +1,10 @@
 # Sign Language Video Segmentation using Temporal Boundary Identification
 
+
 https://github.com/user-attachments/assets/5d79764d-cb28-490e-875e-3d8ef9e7943b
 
-
 ## Objective
+
 Addressing the persistent challenge of demanding and time-consuming temporal annotation in Sign Language (SL) videos, this project introduces a subtitle-level segmentation approach utilizing Beginning-Inside-Outside (BIO) tagging for precise boundary identification. 
 <!--We train a Sequence-to-Sequence (Seq2Seq) model (with and without attention) on optical flow features from BOBSL and YouTube-ASL datasets. Our results demonstrate that the Seq2Seq model with attention significantly outperforms baseline methods, achieving improved segment percentage, F1-score, and IoU for subtitle boundary detection. An additional contribution includes a method for subtitle temporal resolution, designed to streamline manual annotation efforts. -->
 ## Implementation
@@ -16,6 +17,7 @@ For BOBSL, videos are at 25 fps and pre-split into 40 training, 10 validation, a
 ### Model Architecture
 
 <img src="https://github.com/user-attachments/assets/8b92e6bd-6172-49e2-a57c-b0974b2b7353" alt="attention_1" width="500">
+
 
 Encoder: BiLSTM encoder (2 layers, 128 hidden units,
 dropout 0.2) to encode 375x2048 input sequences
@@ -36,7 +38,11 @@ Algorithm to map model probabilities to subtitle boundaries.
 
 ### Results
 
-| Model    | Dataset  |   F1     |    IoU   |     %    | # Params | Time     |
+<img src="https://github.com/user-attachments/assets/4fd63f9c-5e3d-4d15-9192-7981101b8193" alt="Screenshot From 2025-07-10 07-22-30" width="800">
+<img src="https://github.com/user-attachments/assets/a771532d-d533-45cc-9a46-0085a9037fed" alt="Screenshot From 2025-07-10 07-22-46" width="800">
+
+
+<!-- | Model    | Dataset  |   F1     |    IoU   |     %    | # Params | Time     |
 |----------|----------|----------|----------|----------|----------|----------|
 |Sequence Encoder |   BOBSL<br>YouTube-ASL | 0.58 <br> 0.56 | 0.60 <br>0.58|2.50 <br> 0.70|1.38M <br>1.18M|~14h<br>~15h|
 |Autoregressive Encoder| BOBSL<br>YouTube-ASL| 0.55<br> 0.47| 0.51 <br> 0.50|  1.74<br>0.55 | 1.42M <br> 1.26M |~ 1d <br>~ 1d|
@@ -44,12 +50,12 @@ Algorithm to map model probabilities to subtitle boundaries.
 | Model    | Dataset  |   F1     |    IoU   |     %    | # Params | Time     |
 |----------|----------|----------|----------|----------|----------|----------|
 |Seq2Seq Encoder-Decoder w/o attention |   BOBSL<br>YouTube-ASL | 0.58 <br> 0.55 | 0.70 <br>0.58|2.16 <br> 0.87|3.1M <br>3.1M|~15h<br>~19h|
-|Seq2Seq Encoder-Decoder w/ attention| BOBSL<br>YouTube-ASL| **0.60**<br> **0.60**| **0.74** <br> **0.62**| **1.03**<br>**0.95** | 7.8M <br> 3.0M |~ 2d <br>~ 2d|
+|Seq2Seq Encoder-Decoder w/ attention| BOBSL<br>YouTube-ASL| **0.60**<br> **0.60**| **0.74** <br> **0.62**| **1.03**<br>**0.95** | 7.8M <br> 3.0M |~ 2d <br>~ 2d| -->
 
 
 * Successful cases:
   
-<img src="https://github.com/user-attachments/assets/8c63f5f2-f19e-41a6-815e-f5164aaab091" alt="b_i_o(bobsl)" width="800">
+<img src="https://github.com/user-attachments/assets/9f9759cf-37c2-4e4c-bb8f-67c65219fad0" alt="Screenshot From 2025-07-10 07-28-06" width="800">
 
 <img src="https://github.com/user-attachments/assets/bba8182f-8438-45b0-a70f-f513e60f54af" alt="sample" width="800">
 
