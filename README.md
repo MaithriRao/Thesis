@@ -15,12 +15,13 @@ Addressing the persistent challenge of demanding and time-consuming temporal ann
 For BOBSL, videos are at 25 fps and pre-split into 40 training, 10 validation, and 10 test videos. Most clips are 30-60 minutes long. YouTube-ASL videos range from 40 seconds to 40 minutes, with data split into 70% training, 20% validation, and 10% testing.
 
 ### Model Architecture
+Figure 1
 
 <img src="https://github.com/user-attachments/assets/8b92e6bd-6172-49e2-a57c-b0974b2b7353" alt="attention_1" width="500">
 
-** Proposed Method
+### Proposed Method
 * Input Features:
-Input: Optical Flow (RAFT)
+* **Input:** Optical Flow (RAFT)
 ResNet-101 Feature Extraction
 * Segmentation Model:
 Core: Seq2Seq Architecture with & without Attention (Figure 1)
@@ -41,6 +42,8 @@ dimensions), is used to generate logits via a fully
 connected layer. A softmax operation is used to
 normalize these logits into a probability distribution over the output segments. -->
 ### Training
+
+![Screenshot From 2025-07-10 07-40-34](https://github.com/user-attachments/assets/788bd528-0b73-4a10-b65d-d261482ffae5)
 
 ### Inference
 Algorithm to map model probabilities to subtitle boundaries.
