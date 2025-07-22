@@ -1,5 +1,5 @@
 # Sign Language Video Segmentation using Temporal Boundary Identification
-
+Details of this research can be found in our accepted paper: https://openreview.net/pdf?id=vdTzjzUl23
 
 https://github.com/user-attachments/assets/5d79764d-cb28-490e-875e-3d8ef9e7943b
 
