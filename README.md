@@ -26,7 +26,7 @@ ResNet-101 Feature Extraction
 * Segmentation Model:
 Core: Seq2Seq Architecture with & without Attention (Figure 1)
 Encoders: BiLSTM & Autoregressive (Baselines)
-Output: Beginning-Inside-Outside (BIO) for Boundaries as shown in Figure 3.
+Output: Beginning-Inside-Outside (BIO) for Boundaries.
 * Subtitle Temporal Resolution:
 Converts predictions to time-stamped SubRip Subtitle (.srt) Files
 Uses Beam Search Inference
