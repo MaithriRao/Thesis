@@ -9,12 +9,12 @@ https://github.com/user-attachments/assets/18a3792f-0f52-46e3-9a39-62f97956155f
 
 ## Objective
 
-Addressing the persistent challenge of demanding and time-consuming temporal annotation in Sign Language (SL) videos, this project introduces a subtitle-level segmentation approach utilizing Beginning-Inside-Outside (BIO) tagging for precise boundary identification. 
+Addressing the persistent challenge of demanding and time-consuming temporal annotation in Sign Language (SL) videos, this project introduces a subtitle-level segmentation approach utilizing Beginning-Inside-Outside (BIO) tagging for precise subtitle boundary identification. 
 <!--We train a Sequence-to-Sequence (Seq2Seq) model (with and without attention) on optical flow features from BOBSL and YouTube-ASL datasets. Our results demonstrate that the Seq2Seq model with attention significantly outperforms baseline methods, achieving improved segment percentage, F1-score, and IoU for subtitle boundary detection. An additional contribution includes a method for subtitle temporal resolution, designed to streamline manual annotation efforts. -->
 ## Implementation
 ### Datasets
 * BOBSL:The aligned subtitle and pre-extracted optical flow features, is available for direct download at https://www.robots.ox.ac.uk/~vgg/data/bobsl/
-* YouTube-ASL: Download raw videos 'download_replace_empty_subtitles.py' and extract optical flow features 'video_flow_estimation'. Dataset is available at: https://github.com/google-research/google-research/blob/master/youtube_asl/README.md
+* YouTube-ASL: Download raw videos 'step2/download_replace_empty_subtitles.py' and extract optical flow features 'Raft_OF_estimation/video_flow_estimation'. Dataset is available at: https://github.com/google-research/google-research/blob/master/youtube_asl/README.md
 
 For BOBSL, videos are at 25 fps and pre-split into 40 training, 10 validation, and 10 test videos. Most clips are 30-60 minutes long. YouTube-ASL videos range from 40 seconds to 40 minutes, with data split into 70% training, 20% validation, and 10% testing.
 
