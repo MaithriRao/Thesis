@@ -6,11 +6,11 @@ https://github.com/user-attachments/assets/18a3792f-0f52-46e3-9a39-62f97956155f
 
 
 <!-- https://github.com/user-attachments/assets/5d79764d-cb28-490e-875e-3d8ef9e7943b -->
-
-## Objective
+<img src="https://github.com/user-attachments/assets/03e51e15-444a-42eb-ab32-3a4ff2b6fc11" alt="asl_g+i" width="850">
+<!--## Objective
 
 Addressing the persistent challenge of demanding and time-consuming temporal annotation in Sign Language (SL) videos, this project introduces a subtitle-level segmentation approach utilizing Beginning-Inside-Outside (BIO) tagging for precise subtitle boundary identification. 
-<!--We train a Sequence-to-Sequence (Seq2Seq) model (with and without attention) on optical flow features from BOBSL and YouTube-ASL datasets. Our results demonstrate that the Seq2Seq model with attention significantly outperforms baseline methods, achieving improved segment percentage, F1-score, and IoU for subtitle boundary detection. An additional contribution includes a method for subtitle temporal resolution, designed to streamline manual annotation efforts. -->
+
 ## Implementation
 ### Datasets
 * BOBSL:The aligned subtitle and pre-extracted optical flow features, is available for direct download at https://www.robots.ox.ac.uk/~vgg/data/bobsl/
@@ -45,7 +45,7 @@ combined with the previous output embedding (128
 dimensions), is used to generate logits via a fully
 connected layer. A softmax operation is used to
 normalize these logits into a probability distribution over the output segments. -->
-### Training
+<!-- ### Training
 
 ![Screenshot From 2025-07-10 07-40-34](https://github.com/user-attachments/assets/788bd528-0b73-4a10-b65d-d261482ffae5)
 
@@ -53,7 +53,6 @@ normalize these logits into a probability distribution over the output segments.
 Algorithm to map model probabilities to subtitle boundaries.
 
 ![Screenshot From 2025-07-01 00-04-12](https://github.com/user-attachments/assets/c0e198e6-0df0-4b0f-b180-074a516d25e5)
-<!-- ![Screenshot From 2025-07-01 00-05-22](https://github.com/user-attachments/assets/58ce94df-de3e-4f66-9603-824f1916670b) -->
 
 ### Results
 
@@ -72,7 +71,7 @@ Algorithm to map model probabilities to subtitle boundaries.
 |Seq2Seq Encoder-Decoder w/ attention| BOBSL<br>YouTube-ASL| **0.60**<br> **0.60**| **0.74** <br> **0.62**| **1.03**<br>**0.95** | 7.8M <br> 3.0M |~ 2d <br>~ 2d| -->
 
 
-* Successful cases:
+ <!-- * Successful cases:
   
 <img src="https://github.com/user-attachments/assets/9f9759cf-37c2-4e4c-bb8f-67c65219fad0" alt="Screenshot From 2025-07-10 07-28-06" width="800">
 
@@ -84,6 +83,4 @@ Algorithm to map model probabilities to subtitle boundaries.
 
 <img src="https://github.com/user-attachments/assets/07277311-76f3-42ff-9146-a6ef27511c99" alt="asl_g+i" width="800">
 
-<img src="https://github.com/user-attachments/assets/331180be-14d0-4ba7-a760-4c2783dd872f" alt="wrong_asl" width="800">
-
-
+<img src="https://github.com/user-attachments/assets/331180be-14d0-4ba7-a760-4c2783dd872f" alt="wrong_asl" width="800">-->
